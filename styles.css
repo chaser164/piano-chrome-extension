@@ -1,0 +1,34 @@
+.wkey {
+    display: inline-block;
+    background-color: cornsilk;
+    border: 1px solid black;
+    width: 90px;
+    height: 400px;
+    margin-left: -18px;
+}
+
+.piano-frame {
+    min-width: 800px;
+    overflow: hidden;
+    display: flex;
+}
+
+.bkey {
+    margin-left: -22px;
+    background-color: black;
+    border: 1px solid black;
+    z-index: 10;
+    width: 50px;
+    height: 224px;
+}
+
+.panel {
+    background-color: powderblue;
+    z-index: 15;
+    width: 46px;
+    height: 60px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

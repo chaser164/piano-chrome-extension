@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Piano",
+    "description": "A simple piano",
+    "version": "1.0",
+    "action": {
+      "default_icon": "keyboard-prvw.png",
+      "default_popup": "popup.html"
+    }
+  }
