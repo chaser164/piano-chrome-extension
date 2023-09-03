@@ -3,7 +3,7 @@ let activeNotes = [];
 let mouseDown = false;
 let octave = 3;
 let sustain = false;
-// let panelInteraction = false; (reintroduce this variable to add control panel functions)
+let panelInteraction = false; 
 
 //Once popup is loaded...
 document.addEventListener('DOMContentLoaded', function() {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = 0; i < playListeners.length; i++) {
             document.querySelector('#' + note).addEventListener(playListeners[i], function() {
                 //Check if mouse is clicked down
-                if ((mouseDown || playListeners[i] == 'mousedown')) { //  add this to work with control panel: && !panelInteraction
+                if ((mouseDown || playListeners[i] == 'mousedown' && !panelInteraction)) { 
                     //If note not already being played...
                     if (!notesDict[key][1]) {
                         // Play the note if not already being played
@@ -194,14 +194,14 @@ document.addEventListener('DOMContentLoaded', function() {
         mouseDown = false;
     });
 
-    // // Ensure notes aren't played when mouse is interacting with control panel
-    // document.querySelector('.panel').addEventListener('mouseenter', function() {
-    //     panelInteraction = true;
-    // });
+    // Ensure notes aren't played when mouse is interacting with control panel
+    document.querySelector('.panel').addEventListener('mouseenter', function() {
+        panelInteraction = true;
+    });
 
-    // document.querySelector('.panel').addEventListener('mouseleave', function() {
-    //     panelInteraction = false;
-    // });
+    document.querySelector('.panel').addEventListener('mouseleave', function() {
+        panelInteraction = false;
+    });
 });
 
 // Offset note color
