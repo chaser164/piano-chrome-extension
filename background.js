@@ -6,4 +6,4 @@ chrome.runtime.onInstalled.addListener(install => {
         url: 'info.html'
       });
     };
-  });
+});
