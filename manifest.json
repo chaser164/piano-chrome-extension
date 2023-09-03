@@ -4,7 +4,7 @@
     "description": "A simple piano",
     "version": "1.0",
     "action": {
-      "default_icon": "keyboard-prvw.png",
+      "default_icon": "images/keyboard-prvw.png",
       "default_popup": "popup.html"
     }
   }
