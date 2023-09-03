@@ -1,4 +1,4 @@
-A simple keyboard Chrome Extension utilizing the Tone.js web audio framework (https://tonejs.github.io/).
+A simple piano Chrome Extension utilizing the Tone.js web audio framework (https://tonejs.github.io/).
 
  Play the keys with either the mouse or the computer keyboard. Use up/right and down/left arrow keys to change octaves. Press the shift button to toggle sustain on/off.
 
