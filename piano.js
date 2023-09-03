@@ -202,6 +202,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.panel').addEventListener('mouseleave', function() {
         panelInteraction = false;
     });
+
+    // Open info page on info button click
+    document.querySelector('.info-button').addEventListener('mousedown', function() {
+        //Open info page
+        chrome.tabs.create({
+            url: '/info.html'
+        });
+    });
 });
 
 // Offset note color
