@@ -1,8 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Piano",
-    "description": "A simple piano",
+    "description": "A simple, multi-octave piano",
     "version": "1.0",
+    "icons": { 
+        "16": "images/icons/keyboard-prvw-16",
+        "48": "images/icons/keyboard-prvw-48",
+        "128": "images/icons/keyboard-prvw-128" 
+    },
     "action": {
         "default_icon": "images/keyboard-prvw.png",
         "default_popup": "popup.html"
